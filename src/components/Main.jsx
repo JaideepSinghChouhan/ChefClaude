@@ -36,6 +36,7 @@ export default function Main(){
     return(
         <>
         <main>
+            <h3>Give me atleast 4 ingredients to get the Idea what to make today</h3>
             <form onSubmit={(event)=>addIngredient(event)} className="add-ingredient-form" >
                 <input 
                 type="text"
