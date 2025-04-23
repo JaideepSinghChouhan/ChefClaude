@@ -185,7 +185,8 @@ ul.ingredients-list > li {
   }
 
   .add-ingredient-form > button {
-    width: 90%;
+    width: 95%;
+    height: 32px;
   }
 
   section {
@@ -197,7 +198,7 @@ ul.ingredients-list > li {
 
   .get-recipe-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     padding: 15px
   }
