@@ -24,10 +24,6 @@ export async function getRecipeFromGemini(ingredientsArr) {
                          `
        },    
     });
-
-    console.log(response.text);
-
-    // const response = await result.response;
     return response.text;
   } catch (err) {
     console.error("Gemini API Error:", err.message);
