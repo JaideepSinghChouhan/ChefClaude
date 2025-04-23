@@ -1,7 +1,7 @@
 import React from "react"
 import IngredientsList from "./IngredientList"
 import ClaudeRecipe from "./ClaudeRecipe"
-import { getRecipeFromMistral } from "../../ai"
+import { getRecipeFromGemini } from "../../ai"
 export default function Main(){
     
     const [ingredients, setIngredients] = React.useState([])
@@ -10,7 +10,7 @@ export default function Main(){
     const recipeSection=React.useRef(null)
     
     async function getRecipe() {
-        const recipeMarkdown = await getRecipeFromMistral(ingredients)
+        const recipeMarkdown = await getRecipeFromGemini(ingredients)
         setRecipe(recipeMarkdown)
     }
 
